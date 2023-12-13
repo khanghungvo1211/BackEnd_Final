@@ -23,13 +23,17 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 
+const allowedOrigins = ["http://localhost:3000"];
+
 app.use(
   cors({
-    origin: JSON.parse(process.env.CORS_ORIGIN),
+    origin: allowedOrigins,
     credentials: true,
     maxAge: 14400,
   })
 );
+
+
 
 app.use(
   fileUpload({
