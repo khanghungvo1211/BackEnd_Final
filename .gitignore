@@ -1,15 +1,1 @@
 node_modules/
-
-controller/ContactUs.js
-controller/Profile.js
-controller/Section.js
-controller/Subsection.js
-controller/RatingAndReview.js
-
-model/profile.js
-model/Section.js
-model/Subsection.js
-model/RatingAndReview.js
-
-route/ContactUs.js
-route/Profile.js
