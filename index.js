@@ -23,7 +23,7 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["https://ieltsacademyuit.vercel.app/"];
 
 app.use(
   cors({
