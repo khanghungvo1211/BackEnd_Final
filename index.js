@@ -23,11 +23,11 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 
-const allowedOrigins = ["https://ieltsacademyuit.vercel.app"];
+
 
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: "https://ieltsacademyuit.vercel.app",
     credentials: true,
     maxAge: 14400,
   })
