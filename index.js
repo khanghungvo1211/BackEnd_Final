@@ -6,7 +6,8 @@ const userRoutes = require("./routes/User");
 const paymentRoutes = require("./routes/Payments");
 const profileRoutes = require("./routes/Profile");
 const CourseRoutes = require("./routes/Course");
-
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./swagger');
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
 
@@ -53,6 +54,7 @@ app.use("/api/v1/profile", profileRoutes);
 app.use("/api/v1/course", CourseRoutes);
 
 app.use("/api/v1/contact", require("./routes/ContactUs"));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.get("/", (req, res) => {
   res.status(200).json({
