@@ -73,7 +73,7 @@ exports.paymentSuccess = (amount, paymentId, orderId, name,lastname) => {
             <div class="body">
                 <p>Dear ${name} ${lastname},</p>
                 <p>
-                    Thank you for purchasing the course. Your payment of ₹${amount} has been successfully received.
+                    Thank you for purchasing the course. Your payment of ${amount} USD has been successfully received.
                 </p>
                 <p>
                     Your payment ID is <span class="highlight">${paymentId}</span> and your order ID is <span
