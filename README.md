@@ -26,23 +26,40 @@ Table member:
 | swagger-jsdoc     | ^6.2.8  | Swagger/OpenAPI spec documentation |
 | swagger-ui-express| ^5.0.0  | Swagger UI for Express |
 
-### How to install
-- First, using command npm i for install node modules
-- Second, set up .env with
+# Backend Server Setup Guide
+
+This guide will walk you through setting up the backend server for your project.
+
+## Step 1: Install Node Modules
+
+To install the necessary Node.js modules, open a terminal and run:
+
+```bash
+npm install
+
+## Step 2: Set Up Environment Variables
+Create a .env file in the root directory of your project. Add the following environment variables with their respective values:
+
 MAIL_HOST =
-MAIL_USER = 
+MAIL_USER =
 MAIL_PASS =
 CORS_ORIGIN = [""]
-JWT_SECRET = 
-FOLDER_NAME = images  # cloudinary folder name where you want to save images
-FOLDER_VIDEO = videos# cloudinary folder name where you want to save videos
-RAZORPAY_KEY =  # your razorpay key get from razorpay website Mandatory to run server
-RAZORPAY_SECRET = # your razorpay secret 
-CLOUD_NAME = 
-API_KEY = 
-API_SECRET = 
-CONTACT_MAIL =   # Enter your mail, User enquiries will be sent to this mail
-PORT =# server port number
+JWT_SECRET =
+FOLDER_NAME = images # cloudinary folder name where you want to save images
+FOLDER_VIDEO = videos # cloudinary folder name where you want to save videos
+RAZORPAY_KEY = # your razorpay key from Razorpay website (Mandatory to run server)
+RAZORPAY_SECRET = # your razorpay secret from Razorpay website (Mandatory to run server)
+CLOUD_NAME =
+API_KEY =
+API_SECRET =
+CONTACT_MAIL = # Enter your mail; user enquiries will be sent to this mail
+PORT = # server port number
 MONGODB_URL =
-- Third, running server with command npm run dev
+
+## Step 3: Run the Server
+Start the server in development mode using the command:
+npm run dev
+
+
+
   
