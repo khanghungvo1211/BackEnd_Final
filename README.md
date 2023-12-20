@@ -34,13 +34,12 @@ This guide will walk you through setting up the backend server for your project.
 
 To install the necessary Node.js modules, open a terminal and run:
 
-```bash
-npm install
+`npm install`
 
 ## Step 2: Set Up Environment Variables
 Create a .env file in the root directory of your project. Add the following environment variables with their respective values:
 
-MAIL_HOST =
+`MAIL_HOST =
 MAIL_USER =
 MAIL_PASS =
 CORS_ORIGIN = [""]
@@ -54,11 +53,11 @@ API_KEY =
 API_SECRET =
 CONTACT_MAIL = # Enter your mail; user enquiries will be sent to this mail
 PORT = # server port number
-MONGODB_URL =
+MONGODB_URL = `
 
 ## Step 3: Run the Server
 Start the server in development mode using the command:
-npm run dev
+`npm run dev`
 
 
 
