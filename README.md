@@ -34,24 +34,26 @@ To install the necessary Node.js modules, open a terminal and run:
 `npm install`
 
 ### Step 2: Set Up Environment Variables
-Create a .env file in the root directory of your project. Add the following environment variables with their respective values:
-`
-MAIL_HOST = 
-MAIL_USER = 
-MAIL_PASS = 
-CORS_ORIGIN = [""]
-JWT_SECRET = 
-FOLDER_NAME = images  # cloudinary folder name where you want to save images
-FOLDER_VIDEO = videos # cloudinary folder name where you want to save videos
-RAZORPAY_KEY =        # your razorpay key from Razorpay website (Mandatory to run server)
-RAZORPAY_SECRET =     # your razorpay secret from Razorpay website (Mandatory to run server)
-CLOUD_NAME = 
-API_KEY = 
-API_SECRET = 
-CONTACT_MAIL =        # Enter your mail; user enquiries will be sent to this mail
-PORT =                # server port number
-MONGODB_URL =
-`
+Create a `.env` file in the root directory of your project. Add the following environment variables with their respective values:
+| Variable           | Description                                       |
+|--------------------|---------------------------------------------------|
+| MAIL_HOST          |                                                  |
+| MAIL_USER          |                                                  |
+| MAIL_PASS          |                                                  |
+| CORS_ORIGIN        | [""]                                             |
+| JWT_SECRET         |                                                  |
+| FOLDER_NAME        | cloudinary folder name for images                 |
+| FOLDER_VIDEO       | cloudinary folder name for videos                 |
+| RAZORPAY_KEY       | Razorpay key (Mandatory for server)              |
+| RAZORPAY_SECRET    | Razorpay secret (Mandatory for server)           |
+| CLOUD_NAME         |                                                  |
+| API_KEY            |                                                  |
+| API_SECRET         |                                                  |
+| CONTACT_MAIL       | Email for user inquiries                          |
+| PORT               | Server port number                                |
+| MONGODB_URL        | MongoDB connection URL                            |
+
+
 
 ### Step 3: Run the Server
 Start the server in development mode using the command:
