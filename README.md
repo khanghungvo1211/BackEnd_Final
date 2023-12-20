@@ -26,17 +26,14 @@ Table member:
 | swagger-jsdoc     | ^6.2.8  | Swagger/OpenAPI spec documentation |
 | swagger-ui-express| ^5.0.0  | Swagger UI for Express |
 
-# Backend Server Setup Guide
 
-This guide will walk you through setting up the backend server for your project.
-
-## Step 1: Install Node Modules
+### Step 1: Install Node Modules
 
 To install the necessary Node.js modules, open a terminal and run:
 
 `npm install`
 
-## Step 2: Set Up Environment Variables
+### Step 2: Set Up Environment Variables
 Create a .env file in the root directory of your project. Add the following environment variables with their respective values:
 
 `MAIL_HOST =
@@ -55,7 +52,7 @@ CONTACT_MAIL = # Enter your mail; user enquiries will be sent to this mail
 PORT = # server port number
 MONGODB_URL = `
 
-## Step 3: Run the Server
+### Step 3: Run the Server
 Start the server in development mode using the command:
 `npm run dev`
 
